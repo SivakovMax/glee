@@ -45,20 +45,21 @@
 
         <div class="user__nav">
 
-          <div class="user__nav-test">
-          <!--  <input type="text" placeholder="search"> -->
-          <a class="user__nav-search" href="#">
-
-          </a>
+          <div class="user__nav-search-block">
+            <form id="user__nav__form" class="user__nav__form" style="visibility: hidden;" action="#">
+              <input class="user__nav__form-input" type="text" placeholder="Search your item here" required>
+              <button class="user__nav__form-btn" type="submit">Subscribe</button>
+            </form>
+            <div id="user__nav-search" class="user__nav-search"></div>
           </div>
 
 
           <div class="user__nav-nums">
             <a class="user__nav-nums__heart" href="#">
-              <div class="user__nav-num">7</div>
+              <div class="user__nav-num">27</div>
             </a>
             <a class="user__nav-nums__cart" href="#">
-              <div class="user__nav-num">29</div>
+              <div class="user__nav-num">9</div>
             </a>
           </div>
 
@@ -72,7 +73,8 @@
   </header>
 
   <footer class="footer">
-    <div class="container">
+
+    <div class="footer__wrapper">
 
       <div class="footer-top">
 
@@ -168,6 +170,7 @@
     </div>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
