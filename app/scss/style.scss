@@ -234,8 +234,6 @@
   &-menu {
     display: flex;
     justify-content: space-between;
-    &__link {
-    }
     &__list + .footer-menu__list {
       border-left: 1px solid #7b7b7b;
       padding-left: 15px;
