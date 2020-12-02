@@ -11,60 +11,60 @@
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="container container--big">
 
-      <div class="header__wrapper">
+      <div class="header__inner">
 
-        <a class="logo" href="#">
+        <a class="logo header__logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
 
         <nav class="menu">
 
           <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home +</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home +</a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Services</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Services</a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Pages +</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pages +</a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">News</a>
             </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
             </li>
           </ul>
         </nav>
 
-        <div class="user__nav">
+        <div class="user-actions">
 
-          <div class="user__nav-search-block">
-            <form id="user__nav__form" class="user__nav__form" style="visibility: hidden;" action="#">
-              <input class="user__nav__form-input" type="text" placeholder="Search your item here" required>
-              <button class="user__nav__form-btn" type="submit">Subscribe</button>
+          <div class="search-block">
+            <form id="search-form" class="search-form" style="visibility: hidden;" action="#">
+              <input class="input search-form__input" type="text" name="searching" placeholder="Search your item here"
+                required>
+              <button class="search-form__btn" type="submit">Search</button>
             </form>
-            <div id="user__nav-search" class="user__nav-search"></div>
+            <button id="search-btn" class="btn-circle search-btn" type="submit"></button>
           </div>
 
-
-          <div class="user__nav-nums">
-            <a class="user__nav-nums__heart" href="#">
-              <div class="user__nav-num">27</div>
+          <div class="actions-user">
+            <a class="actions-user__item actions-user__item--heart" href="#">
+              <span class="actions-user__num actions-user__num--heart">27</span>
             </a>
-            <a class="user__nav-nums__cart" href="#">
-              <div class="user__nav-num">9</div>
+            <a class="actions-user__item actions-user__item--cart" href="#">
+              <span class="actions-user__num actions-user__num--cart">9</span>
             </a>
           </div>
 
+          <button class="btn-circle menu-asside" type="submit"></button>
 
-          <a class="user__nav-dots" href="#"></a>
         </div>
 
       </div>
@@ -73,25 +73,194 @@
   </header>
 
   <main class="main">
-    
+
+    <section class="slider">
+      <div class="container container--big">
+        <div class="slider__block" style="background-image: url(images/slider/bg-slider.jpg);">
+
+          <div class="slider__inner">
+
+            <div class="slider__item">
+              <div class="slider__content">
+                <div class="slider__title">
+                  SMART AND TRENDY
+                </div>
+                <p class="slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="slider__btn" href="#">
+                  <button class="btn-square slider__btn-button" type="submit">
+                    Shop Now
+                    <img class="btn-arrow" src="images/slider/slider-btn-arrow.svg" alt="arrow-btn">
+                  </button>
+                </a>
+              </div>
+              <img class="slider__img" src="images/slider/items_slider/sofa.png" alt="sofa">
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__content">
+                <div class="slider__title">
+                  SMART AND TRENDY
+                </div>
+                <p class="slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="slider__btn" href="#">
+                  <button class="btn-square slider__btn-button" type="submit">
+                    Shop Now
+                    <!-- нужно ли Shop Now обворачивать в теги? -->
+                    <img class="btn-arrow" src="images/slider/slider-btn-arrow.svg" alt="arrow-btn">
+                  </button>
+                </a>
+              </div>
+              <img class="slider__img" src="images/slider/items_slider/armchair.png" alt="armchair">
+            </div>
+
+            <div class="slider__item">
+              <div class="slider__content">
+                <div class="slider__title">
+                  SMART AND TRENDY
+                </div>
+                <p class="slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="slider__btn" href="#">
+                  <button class="btn-square slider__btn-button" type="submit">
+                    Shop Now
+                    <img class="btn-arrow" src="images/slider/slider-btn-arrow.svg" alt="arrow-btn">
+                  </button>
+                </a>
+              </div>
+              <img class="slider__img" src="images/slider/items_slider/couch.png" alt="couch">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="conditions">
+      <div class="container container--big">
+
+        <div class="conditions__inner">
+
+          <div class="conditions__item">
+            <div class="conditions__content conditions__content--hours">
+              <div class="conditions__title">
+                Support 24/7.
+              </div>
+              <div class="conditions__text conditions__text--width"><!-- тут можно один или два дифиса? -->
+                Contact us 24 hours a day, 7 days a week.
+              </div>
+            </div>
+          </div>
+
+          <div class="conditions__item">
+            <div class="conditions__content conditions__content--truck">
+              <div class="conditions__title">
+                Delivery.
+              </div>
+              <div class="conditions__text">
+                Free shipping on all US order.
+              </div>
+            </div>
+          </div>
+
+          <div class="conditions__item">
+            <div class="conditions__content conditions__content--card">
+              <div class="conditions__title">
+                100% Payment secure.
+              </div>
+              <div class="conditions__text">
+                We ensure secure payment with PEV.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <section class="products">
+      <div class="container">
+
+        <div class="products__title">
+          Products of the week
+        </div>
+
+        <div class="products__filter-btn">
+          <button class="products__btn" data-filter="all">All</button>
+          <button class="products__btn" data-filter=".category-furnitures">Furnitures</button>
+          <button class="products__btn" data-filter=".category-chairs">Chairs</button>
+          <button class="products__btn" data-filter=".category-lighting">Lighting</button>
+          <button class="products__btn" data-filter=".category-decor">Decor</button>
+        </div>
+
+        <div class="products__content">
+          <div class="products__item mix category-profi">
+            <img src="images/week-products/1.jpg" alt="Профи парень">
+          </div>
+          <div class="products__item mix category-tourists">
+            <img src="images/week-products/2.jpg" alt="Турист ребенок">
+          </div>
+          <div class="products__item mix category-tourists">
+            <img src="images/week-products/3.jpg" alt="Турист парень">
+          </div>
+          <div class="products__item mix category-tourists">
+            <img src="images/week-products/4.jpg" alt="Туристы девушки">
+          </div>
+          <div class="products__item mix category-nature">
+            <img src="images/week-products/5.jpg" alt="Фото моря">
+          </div>
+          <div class="products__item mix category-profi">
+            <img src="images/week-products/6.jpg" alt="Турист девушка">
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+
   </main>
 
   <footer class="footer">
 
-    <div class="footer__wrapper">
+    <div class="container">
 
-      <div class="footer-top">
+      <div class="footer-top flexspace">
 
         <div class="footer-top__item">
-          <a class="logo" href="#">
+          <a class="logo footer__logo" href="#">
             <img class="logo__img" src="images/logo.png" alt="logo">
           </a>
-          <address class="footer__address-items">
-            <a class="footer__address address-item" href="#">ADDRESS: 4772 Wines Lane
-              <span>Houston, TX 77032</span>
+          <address class="address">
+            <a class="address-item" href="#">
+              <div class="address-item__title">
+                ADDRESS
+              </div>
+              <div class="address-item__text link">
+                : 4772 Wines Lane Houston, TX 77032
+              </div>
             </a>
-            <a class="footer__phone address-item" href="tel:+8323475843">Telephone: +832-347-5843</a>
-            <a class="footer__email address-item" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
+            <a class="address-item" href="tel:+8323475843">
+              <div class="address-item__title">
+                Telephone
+              </div>
+              <div class="address-item__text link">
+                : +832-347-5843
+              </div>
+            </a>
+            <a class="address-item" href="mailto:contact@Glee.com">
+              <div class="address-item__title">
+                Email
+              </div>
+              <div class="address-item__text link">
+                : contact@Glee.com
+              </div>
+
+            </a>
           </address>
         </div>
 
@@ -99,19 +268,19 @@
           <div class="footer-top__title">Services</div>
           <ul class="footer-top__lists">
             <li class="footer-top__list">
-              <a href="#" class="footer-top__link">About us</a>
+              <a class="footer-top__link link" href="#">About us</a>
             </li>
             <li class="footer-top__list">
-              <a href="#" class="footer-top__link">Return Policy</a>
+              <a class="footer-top__link link" href="#">Return Policy</a>
             </li>
             <li class="footer-top__list">
-              <a href="#" class="footer-top__link">Our Blog</a>
+              <a class="footer-top__link link" href="#">Our Blog</a>
             </li>
             <li class="footer-top__list">
-              <a href="#" class="footer-top__link">Contact Us</a>
+              <a class="footer-top__link link" href="#">Contact Us</a>
             </li>
             <li class="footer-top__list">
-              <a href="#" class="footer-top__link">Terms & Condition</a>
+              <a class="footer-top__link link" href="#">Terms & Condition</a>
             </li>
           </ul>
         </div>
@@ -120,16 +289,16 @@
           <div class="footer-top__title">Account</div>
           <ul class="footer-top__lists">
             <li class="footer-top__list">
-              <a href="#" class="footer-top__link">Your Account</a>
+              <a class="footer-top__link link" href="#">Your Account</a>
             </li>
             <li class="footer-top__list">
-              <a href="#" class="footer-top__link">Checkout</a>
+              <a class="footer-top__link link" href="#">Checkout</a>
             </li>
             <li class="footer-top__list">
-              <a href="#" class="footer-top__link">Login</a>
+              <a class="footer-top__link link" href="#">Login</a>
             </li>
             <li class="footer-top__list">
-              <a href="#" class="footer-top__link">Register</a>
+              <a class="footer-top__link link" href="#">Register</a>
             </li>
           </ul>
         </div>
@@ -140,32 +309,32 @@
             Subscribe by our newsletter and get
             update protidin.
           </div>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="email" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+          <form class="email-form" action="#">
+            <label for="email"></label>
+            <input class="input email-form__input" id="email" name="subscribe[email]" type="email"
+              placeholder="Email address" required>
+            <button class="btn-square email-form__btn" type="submit">Subscribe</button>
           </form>
-
-
         </div>
 
       </div>
 
-      <div class="footer-bottom">
+      <div class="flexspace">
 
-        <div class="copy">©2020 CopyRight Example. All rights reserved.</div>
+        <div class="footer__copy">©2020 CopyRight Example. All rights reserved.</div>
 
-        <ul class="footer-menu">
+        <ul class="footer-menu flexspace">
           <li class="footer-menu__list">
-            <a class="footer-menu-link" href="#">Home</a>
+            <a class="footer-menu-link link" href="#">Home</a>
           </li>
           <li class="footer-menu__list">
-            <a class="footer-menu-link" href="#">About</a>
+            <a class="footer-menu-link link" href="#">About</a>
           </li>
           <li class="footer-menu__list">
-            <a class="footer-menu-link" href="#">Blog</a>
+            <a class="footer-menu-link link" href="#">Blog</a>
           </li>
           <li class="footer-menu__list">
-            <a class="footer-menu-link" href="#">Contact</a>
+            <a class="footer-menu-link link" href="#">Contact</a>
           </li>
         </ul>
 
