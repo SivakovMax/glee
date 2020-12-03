@@ -28,8 +28,24 @@
   font-weight: 500;
 }
 
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+
+
 $default: #585858;
 $title: #436372;
 $button-nav: #a3bbc8;
 $header: #243f4d;
 $bg: #fef7f0;
+
+%titlesec {
+  color: #191919;
+  font-size: 35px;
+  @extend %DMS-700;
+}

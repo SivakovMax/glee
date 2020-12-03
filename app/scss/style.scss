@@ -82,7 +82,7 @@
   }
 
   &__btn {
-    background-color:$button-nav;
+    background-color: $button-nav;
     color: #fff;
     @extend %DMS-400;
     font-size: 14px;
@@ -293,6 +293,121 @@
     max-width: 205px;
   }
 
+}
+
+/*****************************************/
+
+.products__title {
+  margin-bottom: 212px;
+}
+
+.products__filter-btn {
+  margin-bottom: 40px;
+}
+
+.products__btn {
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-transform: uppercase;
+  outline: transparent;
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.5s;
+}
+
+.products__btn:hover {
+  border-color: #00b2a0;
+}
+
+.products__btn+.gallery__btn {
+  margin-left: 20px;
+}
+
+.mixitup-control-active {
+  color: #00b2a0;
+}
+
+.products__content {
+  margin-bottom: 40px;
+  margin-right: -40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products__item {
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.products__item:hover {
+  transform: scale(0.9);
+}
+
+/**********************************/
+.video {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    width: 100px;
+    height: 100px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+    transition: background-color 0.4s;
+    position: relative;
+
+    &:hover {
+      background-color: #4b7d98;
+
+      &:before {
+        visibility: hidden;
+      }
+    }
+
+    &:before {
+      border-radius: 50%;
+      background-color: rgb(163, 187, 200);
+      opacity: 0.4;
+      position: absolute;
+      left: -15%;
+      top: -15%;
+      width: 127px;
+      height: 127px;
+      z-index: 72;
+      -webkit-animation: pulse 5s infinite;
+      animation: pulse 3s infinite;
+      animation-timing-function: ease-in-out;
+    }
+  }
+
+  &__play {
+    margin: 0 auto;
+    margin-top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes pulse {
+  40% {
+    opacity: 0;
+  }
+}
+
+/* Стандартный синтаксис */
+@keyframes pulse {
+  40% {
+    opacity: 0;
+  }
 }
 
 /**********************************/

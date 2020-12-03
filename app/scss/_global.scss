@@ -114,3 +114,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.titlesec {
+  @extend %titlesec;
+}
