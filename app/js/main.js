@@ -1,15 +1,15 @@
 $(function () {
 
-  document.getElementById('search-btn').onclick = function () {
-    var el = document.getElementById('search-form');
+  document.getElementById('header__search-block-btn').onclick = function () {
+    var el = document.getElementById('header__search-form');
     el.style.visibility === 'hidden' ? el.style.visibility = 'visible' : el.style.visibility = 'hidden';
   }
 
-  $('.slider__inner').slick({
+  $('.slider-main').slick({
     dots: true,
     fade: true,
     arrows: false,
-    autoplay: true
+    // autoplay: true
     });
 
     var mixer = mixitup('.products__content');

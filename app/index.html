@@ -15,55 +15,59 @@
 
       <div class="header__inner">
 
-        <a class="logo header__logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="logo">
-        </a>
+        <div class="header__menu">
 
-        <nav class="menu">
+          <a class="logo header__logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
 
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Home +</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">About</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Services</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Pages +</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">News</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="menu">
 
-        <div class="user-actions">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Home +</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Pages +</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">News</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
 
-          <div class="search-block">
-            <form id="search-form" class="search-form" style="visibility: hidden;" action="#">
-              <input class="input search-form__input" type="text" name="searching" placeholder="Search your item here"
+        </div>
+
+        <div class="header__user">
+
+          <div class="header__search-block">
+            <form id="header__search-form" class="header__search-form" style="visibility: hidden;" action="#">
+              <input class="header__search-input" type="text" name="searching" placeholder="Search your item here"
                 required>
-              <button class="search-form__btn" type="submit">Search</button>
+              <button class="header__search-btn" type="submit">Search</button>
             </form>
-            <button id="search-btn" class="btn-circle search-btn" type="submit"></button>
+            <button id="header__search-block-btn" class="btn-circle header__search-block-btn" type="submit"></button>
           </div>
 
-          <div class="actions-user">
-            <a class="actions-user__item actions-user__item--heart" href="#">
-              <span class="actions-user__num actions-user__num--heart">27</span>
+          <div class="header__actions-user">
+            <a class="header__actions-item header__actions-item--heart" href="#">
+              <span class="header__actions-num header__actions-num--heart">27</span>
             </a>
-            <a class="actions-user__item actions-user__item--cart" href="#">
-              <span class="actions-user__num actions-user__num--cart">9</span>
+            <a class="header__actions-item header__actions-item--cart" href="#">
+              <span class="header__actions-num header__actions-num--cart">9</span>
             </a>
           </div>
 
-          <button class="btn-circle menu-asside" type="submit"></button>
+          <button class="btn-circle header__menu-asside" type="submit"></button>
 
         </div>
 
@@ -74,113 +78,118 @@
 
   <main class="main">
 
-    <section class="slider">
+    <section class="slider-main">
+
       <div class="container container--big">
-        <div class="slider__block" style="background-image: url(images/slider/bg-slider.jpg);">
-
-          <div class="slider__inner">
-
-            <div class="slider__item">
-              <div class="slider__content">
-                <div class="slider__title">
-                  SMART AND TRENDY
-                </div>
-                <p class="slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                </p>
-                <a class="slider__btn" href="#">
-                  <button class="btn-square slider__btn-button" type="submit">
+        <div class="slider-main__wrapper">
+          <div class="container">
+            <div class="slider-main__inner">
+              <div class="slider-main__item">
+                <div class="slider-main__content">
+                  <span class="slider-main__title">
+                    SMART AND TRENDY
+                  </span>
+                  <p class="slider-main__text">
+                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  </p>
+                  <a class="slider-main__btn btn-square" href="#">
                     Shop Now
-                    <img class="btn-arrow" src="images/slider/slider-btn-arrow.svg" alt="arrow-btn">
-                  </button>
-                </a>
-              </div>
-              <img class="slider__img" src="images/slider/items_slider/sofa.png" alt="sofa">
-            </div>
-
-            <div class="slider__item">
-              <div class="slider__content">
-                <div class="slider__title">
-                  SMART AND TRENDY
+                  </a>
                 </div>
-                <p class="slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                </p>
-                <a class="slider__btn" href="#">
-                  <button class="btn-square slider__btn-button" type="submit">
-                    Shop Now
-                    <!-- нужно ли Shop Now обворачивать в теги? -->
-                    <img class="btn-arrow" src="images/slider/slider-btn-arrow.svg" alt="arrow-btn">
-                  </button>
-                </a>
+                <img class="slider-main__img" s src="images/slider/items_slider/sofa.png" alt="sofa">
               </div>
-              <img class="slider__img" src="images/slider/items_slider/armchair.png" alt="armchair">
             </div>
-
-            <div class="slider__item">
-              <div class="slider__content">
-                <div class="slider__title">
-                  SMART AND TRENDY
-                </div>
-                <p class="slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                </p>
-                <a class="slider__btn" href="#">
-                  <button class="btn-square slider__btn-button" type="submit">
-                    Shop Now
-                    <img class="btn-arrow" src="images/slider/slider-btn-arrow.svg" alt="arrow-btn">
-                  </button>
-                </a>
-              </div>
-              <img class="slider__img" src="images/slider/items_slider/couch.png" alt="couch">
-            </div>
-
           </div>
-
         </div>
       </div>
+
+      <div class="container container--big">
+        <div class="slider-main__wrapper">
+          <div class="container">
+            <div class="slider-main__inner">
+              <div class="slider-main__item">
+                <div class="slider-main__content">
+                  <span class="slider-main__title">
+                    SMART AND TRENDY
+                  </span>
+                  <p class="slider-main__text">
+                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  </p>
+                  <a class="slider-main__btn btn-square" href="#">
+                    Shop Now
+                  </a>
+                </div>
+                <img class="slider-main__img" src="images/slider/items_slider/armchair.png" alt="sofa">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container container--big">
+        <div class="slider-main__wrapper">
+          <div class="container">
+            <div class="slider-main__inner">
+              <div class="slider-main__item">
+                <div class="slider-main__content">
+                  <span class="slider-main__title">
+                    SMART AND TRENDY
+                  </span>
+                  <p class="slider-main__text">
+                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  </p>
+                  <a class="slider-main__btn btn-square" href="#">
+                    Shop Now
+                  </a>
+                </div>
+                <img class="slider-main__img" src="images/slider/items_slider/couch.png" alt="sofa">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <div class="conditions">
       <div class="container container--big">
 
-        <div class="conditions__inner">
+        <ul class="conditions__list">
 
-          <div class="conditions__item">
+          <li class="conditions__item">
             <div class="conditions__content conditions__content--hours">
-              <div class="conditions__title">
+              <span class="conditions__title">
                 Support 24/7.
-              </div>
+              </span>
               <div class="conditions__text conditions__text--width">
-                <!-- тут можно один или два дифиса? -->
-                Contact us 24 hours a day, 7 days a week.
+                <p>Contact us 24 hours a day, 7 days a week.</p>
               </div>
             </div>
-          </div>
+          </li>
 
-          <div class="conditions__item">
+          <li class="conditions__item">
             <div class="conditions__content conditions__content--truck">
-              <div class="conditions__title">
+              <span class="conditions__title">
                 Delivery.
-              </div>
+              </span>
               <div class="conditions__text">
-                Free shipping on all US order.
+                <p>Free shipping on all US order.</p>
               </div>
             </div>
-          </div>
+          </li>
 
-          <div class="conditions__item">
+          <li class="conditions__item">
             <div class="conditions__content conditions__content--card">
-              <div class="conditions__title">
+              <span class="conditions__title">
                 100% Payment secure.
-              </div>
+              </span>
               <div class="conditions__text">
-                We ensure secure payment with PEV.
+                <p>We ensure secure payment with PEV.</p>
               </div>
             </div>
-          </div>
+          </li>
 
-        </div>
+        </ul>
 
       </div>
     </div>
@@ -188,7 +197,7 @@
     <section class="products">
       <div class="container">
 
-        <div class="products__title">
+        <div class="products__title titlesec">
           Products of the week
         </div>
 
@@ -201,30 +210,119 @@
         </div>
 
         <div class="products__content">
-          <div class="products__item mix category-furnitures">
-            <img src="images/week-products/1.png" alt="furnitures">
+
+          <div class="products__item mix category-furnitures" href="#">
+            <img class="products__img" src="images/week-products/1.png" alt="furnitures">
+            <ul class="products__links">
+              <a class="products__link products__link--search" href="#">
+              </a>
+              <a class="products__link products__link--cart" href="#">
+              </a>
+              <a class="products__link products__link--heart" href="#">
+              </a>
+            </ul>
+            <div class="products__desc">
+              <div class="products__name">
+                Wooden radio
+              </div>
+              <div class="products__price">
+                $29.00
+              </div>
+            </div>
           </div>
-          <div class="products__item mix category-chairs">
-            <img src="images/week-products/2.png" alt="chairs">
+
+          <div class="products__item mix category-chairs" href="#">
+            <img class="products__img" src="images/week-products/2.png" alt="chairs">
+            <ul class="products__links">
+              <a class="products__link products__link--search" href="#">
+              </a>
+              <a class="products__link products__link--cart" href="#">
+              </a>
+              <a class="products__link products__link--heart" href="#">
+              </a>
+            </ul>
+            <div class="products__desc">
+              <div class="products__name">
+                Wooden chair
+              </div>
+              <div class="products__price">
+                $29.00
+              </div>
+            </div>
           </div>
-          <div class="products__item mix category-lighting">
-            <img src="images/week-products/3.png" alt="lighting">
+
+          <div class="products__item mix category-lighting" href="#">
+            <img class="products__img" src="images/week-products/3.png" alt="lighting">
+            <div class="products__desc">
+              <div class="products__name">
+                White chair
+              </div>
+              <div class="products__price">
+                $29.00
+              </div>
+            </div>
           </div>
-          <div class="products__item mix category-chairs">
-            <img src="images/week-products/4.png" alt="chairs">
+
+          <div class="products__item mix category-chairs" href="#">
+            <img class="products__img" src="images/week-products/4.png" alt="chairs">
+            <div class="products__desc">
+              <div class="products__name">
+                Retro table
+              </div>
+              <div class="products__price">
+                $29.00
+              </div>
+            </div>
           </div>
-          <div class="products__item mix category-decor">
-            <img src="images/week-products/5.png" alt="decor">
+
+          <div class="products__item mix category-decor" href="#">
+            <img class="products__img" src="images/week-products/5.png" alt="decor">
+            <div class="products__desc">
+              <div class="products__name">
+                Wooden radio
+              </div>
+              <div class="products__price">
+                $29.00
+              </div>
+            </div>
           </div>
-          <div class="products__item mix category-furnitures">
-            <img src="images/week-products/6.png" alt="furnitures">
+
+          <div class="products__item mix category-furnitures" href="#">
+            <img class="products__img" src="images/week-products/6.png" alt="furnitures">
+            <div class="products__desc">
+              <div class="products__name">
+                Wooden chair
+              </div>
+              <div class="products__price">
+                $29.00
+              </div>
+            </div>
           </div>
-          <div class="products__item mix category-lighting">
-            <img src="images/week-products/7.png" alt="lighting">
+
+          <div class="products__item mix category-lighting" href="#">
+            <img class="products__img" src="images/week-products/7.png" alt="lighting">
+            <div class="products__desc">
+              <div class="products__name">
+                White chair
+              </div>
+              <div class="products__price">
+                $29.00
+              </div>
+            </div>
           </div>
-          <div class="products__item mix category-lighting">
-            <img src="images/week-products/8.png" alt="lighting">
+
+          <div class="products__item mix category-lighting" href="#">
+            <img class="products__img" src="images/week-products/8.png" alt="lighting">
+            <div class="products__desc">
+              <div class="products__name">
+                Retro table
+              </div>
+              <div class="products__price">
+                $29.00
+              </div>
+            </div>
           </div>
+
         </div>
 
       </div>
@@ -242,34 +340,34 @@
 
     <div class="container">
 
-      <div class="footer-top flexspace">
+      <div class="footer__wrapper flexspace">
 
-        <div class="footer-top__item">
+        <div class="footer__item">
           <a class="logo footer__logo" href="#">
             <img class="logo__img" src="images/logo.png" alt="logo">
           </a>
-          <address class="address">
-            <a class="address-item" href="#">
-              <div class="address-item__title">
+          <address class="footer__address">
+            <a class="footer__address-item" href="#">
+              <div class="footer__address-title">
                 ADDRESS
               </div>
-              <div class="address-item__text link">
+              <div class="footer__address-text">
                 : 4772 Wines Lane Houston, TX 77032
               </div>
             </a>
-            <a class="address-item" href="tel:+8323475843">
-              <div class="address-item__title">
+            <a class="footer__address-item" href="tel:+8323475843">
+              <div class="footer__address-title">
                 Telephone
               </div>
-              <div class="address-item__text link">
+              <div class="footer__address-text">
                 : +832-347-5843
               </div>
             </a>
-            <a class="address-item" href="mailto:contact@Glee.com">
-              <div class="address-item__title">
+            <a class="footer__address" href="mailto:contact@Glee.com">
+              <div class="footer__address-title">
                 Email
               </div>
-              <div class="address-item__text link">
+              <div class="footer__address-text">
                 : contact@Glee.com
               </div>
 
@@ -277,48 +375,48 @@
           </address>
         </div>
 
-        <div class="footer-top__item">
-          <div class="footer-top__title">Services</div>
-          <ul class="footer-top__lists">
-            <li class="footer-top__list">
-              <a class="footer-top__link link" href="#">About us</a>
+        <div class="footer__item">
+          <div class="footer__title">Services</div>
+          <ul class="footer__lists">
+            <li class="footer__list">
+              <a class="footer__link" href="#">About us</a>
             </li>
-            <li class="footer-top__list">
-              <a class="footer-top__link link" href="#">Return Policy</a>
+            <li class="footer__list">
+              <a class="footer__link" href="#">Return Policy</a>
             </li>
-            <li class="footer-top__list">
-              <a class="footer-top__link link" href="#">Our Blog</a>
+            <li class="footer__list">
+              <a class="footer__link" href="#">Our Blog</a>
             </li>
-            <li class="footer-top__list">
-              <a class="footer-top__link link" href="#">Contact Us</a>
+            <li class="footer__list">
+              <a class="footer__link" href="#">Contact Us</a>
             </li>
-            <li class="footer-top__list">
-              <a class="footer-top__link link" href="#">Terms & Condition</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-top__item">
-          <div class="footer-top__title">Account</div>
-          <ul class="footer-top__lists">
-            <li class="footer-top__list">
-              <a class="footer-top__link link" href="#">Your Account</a>
-            </li>
-            <li class="footer-top__list">
-              <a class="footer-top__link link" href="#">Checkout</a>
-            </li>
-            <li class="footer-top__list">
-              <a class="footer-top__link link" href="#">Login</a>
-            </li>
-            <li class="footer-top__list">
-              <a class="footer-top__link link" href="#">Register</a>
+            <li class="footer__list">
+              <a class="footer__link" href="#">Terms & Condition</a>
             </li>
           </ul>
         </div>
 
-        <div class="footer-top__item">
-          <div class="footer-top__title">newsletter</div>
-          <div class="footer-top__subscribe">
+        <div class="footer__item">
+          <div class="footer__title">Account</div>
+          <ul class="footer__lists">
+            <li class="footer__list">
+              <a class="footer__link" href="#">Your Account</a>
+            </li>
+            <li class="footer__list">
+              <a class="footer__link" href="#">Checkout</a>
+            </li>
+            <li class="footer__list">
+              <a class="footer__link" href="#">Login</a>
+            </li>
+            <li class="footer__list">
+              <a class="footer__link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <div class="footer__title">newsletter</div>
+          <div class="footer__subscribe">
             Subscribe by our newsletter and get
             update protidin.
           </div>
@@ -336,18 +434,18 @@
 
         <div class="footer__copy">©2020 CopyRight Example. All rights reserved.</div>
 
-        <ul class="footer-menu flexspace">
-          <li class="footer-menu__list">
-            <a class="footer-menu-link link" href="#">Home</a>
+        <ul class="footer__menu flexspace">
+          <li class="footer__menu-list">
+            <a class="footer__menu-link" href="#">Home</a>
           </li>
-          <li class="footer-menu__list">
-            <a class="footer-menu-link link" href="#">About</a>
+          <li class="footer__menu-list">
+            <a class="footer__menu-link" href="#">About</a>
           </li>
-          <li class="footer-menu__list">
-            <a class="footer-menu-link link" href="#">Blog</a>
+          <li class="footer__menu-list">
+            <a class="footer__menu-link" href="#">Blog</a>
           </li>
-          <li class="footer-menu__list">
-            <a class="footer-menu-link link" href="#">Contact</a>
+          <li class="footer__menu-list">
+            <a class="footer__menu-link" href="#">Contact</a>
           </li>
         </ul>
 
