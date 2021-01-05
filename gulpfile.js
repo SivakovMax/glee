@@ -6,8 +6,20 @@ const autoprefixer  = require('gulp-autoprefixer');
 const uglify        = require('gulp-uglify-es').default;
 const imagemin      = require('gulp-imagemin');
 const del           = require('del');
+const svgSprite     = require('gulp-svg-sprite');
 const browserSync   = require('browser-sync').create();
 
+const svgSprites = () => {
+  return src('app/images/**/*.svg')
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: "../sprite.svg"
+        }
+      }
+    }))
+    .pipe(dest('app/images'))
+}
 
 function browsersync() {
   browserSync.init({
@@ -78,7 +90,8 @@ function cleanDist() {
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/**/*.html']).on('change', browserSync.reload)
+  watch(['app/**/*.html']).on('change', browserSync.reload);
+  watch(['app/images/**/*.svg'], svgSprites);
 }
 
 
@@ -91,4 +104,4 @@ exports.images      = images;
 exports.cleanDist   = cleanDist;
 exports.build       = series(cleanDist, images, build);
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, svgSprites, browsersync, watching);

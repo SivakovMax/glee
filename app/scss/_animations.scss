@@ -1,0 +1,13 @@
+/* Chrome, Safari, Opera */
+@-webkit-keyframes pulse {
+  40% {
+    opacity: 0.1;
+  }
+}
+
+/* Стандартный синтаксис */
+@keyframes pulse {
+  40% {
+    opacity: 0.1;
+  }
+}

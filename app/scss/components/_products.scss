@@ -1,0 +1,12 @@
+.products {
+  &__title {
+    margin: 64px 0 21px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 60px;
+  }
+}

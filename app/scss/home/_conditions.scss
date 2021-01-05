@@ -1,0 +1,72 @@
+.conditions {
+  &__list {
+    background-color: $bg;
+    display: flex;    
+  }
+
+  &__item {
+    max-width: 590px;
+    width: 100%;
+    padding: 40px 0 37px !important;
+
+    &:not(:last-child) {
+      border-right: 1px solid #e8e4df;
+    }
+
+    &:hover {
+      .conditions__content:before {
+        transform: scale(1.2);
+        ;
+      }
+    }
+  }
+
+  &__content {
+    padding-left: 230px;
+    position: relative;
+
+    &::before {
+      @extend %pseudo;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      left: 148px;
+      top: 13px;
+      transition: all 0.3s;
+    }
+
+    &--hours {
+      &::before {
+        background-image: url(../images/conditions-icons/hours.svg);
+      }
+    }
+
+    &--truck {
+      &::before {
+        background-image: url(../images/conditions-icons/truck.svg);
+      }
+    }
+
+    &--card {
+      &::before {
+        background-image: url(../images/conditions-icons/card.svg);
+      }
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.6;
+    @extend %DMS-700;
+    color: #414141;
+  }
+
+  &__text {
+    line-height: 2;
+    max-width: 215px;
+
+    &--width {
+      max-width: 205px;
+    }
+  }
+}

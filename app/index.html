@@ -50,24 +50,30 @@
         <div class="header__user">
 
           <div class="header__search-block">
-            <form id="header__search-form" class="header__search-form" style="visibility: hidden;" action="#">
-              <input class="header__search-input" type="text" name="searching" placeholder="Search your item here"
-                required>
+            <form id="header__search-form" class="header__search-form" style="visibility: hidden" action="#">
+              <input class="header__search-input" type="search" name="searching"
+                aria-label="Search through site content" placeholder="Search your item here" required>
               <button class="header__search-btn" type="submit">Search</button>
             </form>
-            <button id="header__search-block-btn" class="btn-circle header__search-block-btn" type="submit"></button>
+            <button id="header__search-block-btn" class="btn-circle header__search-block-btn js-btn" type="button">
+              <span class="hidden">Go to search</span>
+            </button>
           </div>
 
           <div class="header__actions-user">
             <a class="header__actions-item header__actions-item--heart" href="#">
+              <span class="hidden">Go to selected products</span>
               <span class="header__actions-num header__actions-num--heart">27</span>
             </a>
             <a class="header__actions-item header__actions-item--cart" href="#">
+              <span class="hidden">Go to cart</span>
               <span class="header__actions-num header__actions-num--cart">9</span>
             </a>
           </div>
 
-          <button class="btn-circle header__menu-asside" type="submit"></button>
+          <button class="btn-circle header__menu-asside" type="button">
+            <span class="hidden">Open asside menu</span>
+          </button>
 
         </div>
 
@@ -78,78 +84,72 @@
 
   <main class="main">
 
-    <section class="slider-main">
+    <div class="slider-main container container--big">
 
-      <div class="container container--big">
-        <div class="slider-main__wrapper">
-          <div class="container">
-            <div class="slider-main__inner">
-              <div class="slider-main__item">
-                <div class="slider-main__content">
-                  <span class="slider-main__title">
-                    SMART AND TRENDY
-                  </span>
-                  <p class="slider-main__text">
-                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                  </p>
-                  <a class="slider-main__btn btn-square" href="#">
-                    Shop Now
-                  </a>
+      <div class="slider-main__wrapper">
+        <div class="container">
+          <div class="slider-main__inner">
+            <div class="slider-main__item">
+              <div class="slider-main__content">
+                <span class="slider-main__title">
+                  Smart and trendy
+                </span>
+                <div class="slider-main__text">
+                  <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
                 </div>
-                <img class="slider-main__img" s src="images/slider/items_slider/sofa.png" alt="sofa">
+                <a class="slider-main__btn btn-square" href="#">
+                  Shop Now
+                </a>
               </div>
+              <img class="slider-main__img" src="images/slider/items_slider/sofa.png" alt="sofa">
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container container--big">
-        <div class="slider-main__wrapper">
-          <div class="container">
-            <div class="slider-main__inner">
-              <div class="slider-main__item">
-                <div class="slider-main__content">
-                  <span class="slider-main__title">
-                    SMART AND TRENDY
-                  </span>
-                  <p class="slider-main__text">
-                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                  </p>
-                  <a class="slider-main__btn btn-square" href="#">
-                    Shop Now
-                  </a>
+      <div class="slider-main__wrapper">
+        <div class="container">
+          <div class="slider-main__inner">
+            <div class="slider-main__item">
+              <div class="slider-main__content">
+                <span class="slider-main__title">
+                  Smart and trendy
+                </span>
+                <div class="slider-main__text">
+                  <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
                 </div>
-                <img class="slider-main__img" src="images/slider/items_slider/armchair.png" alt="sofa">
+                <a class="slider-main__btn btn-square" href="#">
+                  Shop Now
+                </a>
               </div>
+              <img class="slider-main__img" src="images/slider/items_slider/armchair.png" alt="sofa">
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container container--big">
-        <div class="slider-main__wrapper">
-          <div class="container">
-            <div class="slider-main__inner">
-              <div class="slider-main__item">
-                <div class="slider-main__content">
-                  <span class="slider-main__title">
-                    SMART AND TRENDY
-                  </span>
-                  <p class="slider-main__text">
-                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                  </p>
-                  <a class="slider-main__btn btn-square" href="#">
-                    Shop Now
-                  </a>
+      <div class="slider-main__wrapper">
+        <div class="container">
+          <div class="slider-main__inner">
+            <div class="slider-main__item">
+              <div class="slider-main__content">
+                <span class="slider-main__title">
+                  Smart and trendy
+                </span>
+                <div class="slider-main__text">
+                  <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
                 </div>
-                <img class="slider-main__img" src="images/slider/items_slider/couch.png" alt="sofa">
+                <a class="slider-main__btn btn-square" href="#">
+                  Shop Now
+                </a>
               </div>
+              <img class="slider-main__img" src="images/slider/items_slider/couch.png" alt="sofa">
             </div>
           </div>
         </div>
       </div>
 
-    </section>
+    </div>
 
     <div class="conditions">
       <div class="container container--big">
@@ -197,131 +197,213 @@
     <section class="products">
       <div class="container">
 
-        <div class="products__title titlesec">
+        <h2 class="products__title title">
           Products of the week
-        </div>
+        </h2>
 
-        <div class="products__filter-btn">
-          <button class="products__btn" data-filter="all">All</button>
-          <button class="products__btn" data-filter=".category-furnitures">Furnitures</button>
-          <button class="products__btn" data-filter=".category-chairs">Chairs</button>
-          <button class="products__btn" data-filter=".category-lighting">Lighting</button>
-          <button class="products__btn" data-filter=".category-decor">Decor</button>
-        </div>
+        <ul class="menu-mix">
+          <li class="menu-mix__item">
+            <button class="menu-mix__btn" data-filter="all">All</button>
+          </li>
+          <li class="menu-mix__item">
+            <button class="menu-mix__btn" data-filter=".category-furnitures">Furnitures</button>
+          </li>
+          <li class="menu-mix__item">
+            <button class="menu-mix__btn" data-filter=".category-chairs">Chairs</button>
+          </li>
+          <li class="menu-mix__item">
+            <button class="menu-mix__btn" data-filter=".category-lighting">Lighting</button>
+          </li>
+          <li class="menu-mix__item">
+            <button class="menu-mix__btn" data-filter=".category-decor">Decor</button>
+          </li>
+        </ul>
 
         <div class="products__content">
 
-          <div class="products__item mix category-furnitures" href="#">
-            <img class="products__img" src="images/week-products/1.png" alt="furnitures">
-            <ul class="products__links">
-              <a class="products__link products__link--search" href="#">
+          <article class="product-item mix category-chairs" href="#">
+            <img class="product-item__img" src="images/week-products/1.png" alt="chairs">
+            <ul class="product-item__links">
+              <a class="product-item__link product-item__link--search" href="#">
+                <span class="hidden">Go to selected products</span>
               </a>
-              <a class="products__link products__link--cart" href="#">
-              </a>
-              <a class="products__link products__link--heart" href="#">
-              </a>
+              <button class="product-item__link product-item__link--cart" type="button">
+                <span class="hidden">Add to cart</span>
+              </button>
+              <button class="product-item__link product-item__link--heart" type="button">
+                <span class="hidden">Add to selected products</span>
+                </butto>
             </ul>
-            <div class="products__desc">
-              <div class="products__name">
+            <div class="product-item__desc">
+              <h3 class="product-item__name">
                 Wooden radio
-              </div>
-              <div class="products__price">
-                $29.00
-              </div>
+              </h3>
+              <span class="product-item__price">
+                <span>$</span>29.00
+              </span>
             </div>
-          </div>
+          </article>
 
-          <div class="products__item mix category-chairs" href="#">
-            <img class="products__img" src="images/week-products/2.png" alt="chairs">
-            <ul class="products__links">
-              <a class="products__link products__link--search" href="#">
+          <article class="product-item mix category-furnitures" href="#">
+            <img class="product-item__img" src="images/week-products/2.png" alt="furnitures">
+            <ul class="product-item__links">
+              <a class="product-item__link product-item__link--search" href="#">
+                <span class="hidden">Go to selected products</span>
               </a>
-              <a class="products__link products__link--cart" href="#">
-              </a>
-              <a class="products__link products__link--heart" href="#">
-              </a>
+              <button class="product-item__link product-item__link--cart" type="button">
+                <span class="hidden">Add to cart</span>
+              </button>
+              <button class="product-item__link product-item__link--heart" type="button">
+                <span class="hidden">Add to selected products</span>
+              </butto>
             </ul>
-            <div class="products__desc">
-              <div class="products__name">
+            <div class="product-item__desc">
+              <h3 class="product-item__name">
                 Wooden chair
-              </div>
-              <div class="products__price">
-                $29.00
-              </div>
+              </h3>
+              <span class="product-item__price">
+                <span>$</span>29.00
+              </span>
             </div>
-          </div>
+          </article>
 
-          <div class="products__item mix category-lighting" href="#">
-            <img class="products__img" src="images/week-products/3.png" alt="lighting">
-            <div class="products__desc">
-              <div class="products__name">
+          <article class="product-item mix category-chairs" href="#">
+            <img class="product-item__img" src="images/week-products/3.png" alt="chairs">
+            <ul class="product-item__links">
+              <a class="product-item__link product-item__link--search" href="#">
+                <span class="hidden">Go to selected products</span>
+              </a>
+              <button class="product-item__link product-item__link--cart" type="button">
+                <span class="hidden">Add to cart</span>
+              </button>
+              <button class="product-item__link product-item__link--heart" type="button">
+                <span class="hidden">Add to selected products</span>
+                </butto>
+            </ul>
+            <div class="product-item__desc">
+              <h3 class="product-item__name">
                 White chair
-              </div>
-              <div class="products__price">
-                $29.00
-              </div>
+              </h3>
+              <span class="product-item__price">
+                <span>$</span>29.00
+              </span>
             </div>
-          </div>
+          </article>
 
-          <div class="products__item mix category-chairs" href="#">
-            <img class="products__img" src="images/week-products/4.png" alt="chairs">
-            <div class="products__desc">
-              <div class="products__name">
+          <article class="product-item mix category-lighting" href="#">
+            <img class="product-item__img" src="images/week-products/4.png" alt="lighting">
+            <ul class="product-item__links">
+              <a class="product-item__link product-item__link--search" href="#">
+                <span class="hidden">Go to selected products</span>
+              </a>
+              <button class="product-item__link product-item__link--cart" type="button">
+                <span class="hidden">Add to cart</span>
+              </button>
+              <button class="product-item__link product-item__link--heart" type="button">
+                <span class="hidden">Add to selected products</span>
+                </butto>
+            </ul>
+            <div class="product-item__desc">
+              <h3 class="product-item__name">
                 Retro table
-              </div>
-              <div class="products__price">
-                $29.00
-              </div>
+              </h3>
+              <span class="product-item__price">
+                <span>$</span>29.00
+              </span>
             </div>
-          </div>
+          </article>
 
-          <div class="products__item mix category-decor" href="#">
-            <img class="products__img" src="images/week-products/5.png" alt="decor">
-            <div class="products__desc">
-              <div class="products__name">
+          <article class="product-item mix category-furnitures" href="#">
+            <img class="product-item__img" src="images/week-products/5.png" alt="furnitures">
+            <ul class="product-item__links">
+              <a class="product-item__link product-item__link--search" href="#">
+                <span class="hidden">Go to selected products</span>
+              </a>
+              <button class="product-item__link product-item__link--cart" type="button">
+                <span class="hidden">Add to cart</span>
+              </button>
+              <button class="product-item__link product-item__link--heart" type="button">
+                <span class="hidden">Add to selected products</span>
+                </butto>
+            </ul>
+            <div class="product-item__desc">
+              <h3 class="product-item__name">
                 Wooden radio
-              </div>
-              <div class="products__price">
-                $29.00
-              </div>
+              </h3>
+              <span class="product-item__price">
+                <span>$</span>29.00
+              </span>
             </div>
-          </div>
+          </article>
 
-          <div class="products__item mix category-furnitures" href="#">
-            <img class="products__img" src="images/week-products/6.png" alt="furnitures">
-            <div class="products__desc">
-              <div class="products__name">
+          <article class="product-item mix category-lighting" href="#">
+            <img class="product-item__img" src="images/week-products/6.png" alt="lighting">
+            <ul class="product-item__links">
+              <a class="product-item__link product-item__link--search" href="#">
+                <span class="hidden">Go to selected products</span>
+              </a>
+              <button class="product-item__link product-item__link--cart" type="button">
+                <span class="hidden">Add to cart</span>
+              </button>
+              <button class="product-item__link product-item__link--heart" type="button">
+                <span class="hidden">Add to selected products</span>
+                </butto>
+            </ul>
+            <div class="product-item__desc">
+              <h3 class="product-item__name">
                 Wooden chair
-              </div>
-              <div class="products__price">
-                $29.00
-              </div>
+              </h3>
+              <span class="product-item__price">
+                <span>$</span>29.00
+              </span>
             </div>
-          </div>
+          </article>
 
-          <div class="products__item mix category-lighting" href="#">
-            <img class="products__img" src="images/week-products/7.png" alt="lighting">
-            <div class="products__desc">
-              <div class="products__name">
+          <article class="product-item mix category-chairs" href="#">
+            <img class="product-item__img" src="images/week-products/7.png" alt="chairs">
+            <ul class="product-item__links">
+              <a class="product-item__link product-item__link--search" href="#">
+                <span class="hidden">Go to selected products</span>
+              </a>
+              <button class="product-item__link product-item__link--cart" type="button">
+                <span class="hidden">Add to cart</span>
+              </button>
+              <button class="product-item__link product-item__link--heart" type="button">
+                <span class="hidden">Add to selected products</span>
+                </butto>
+            </ul>
+            <div class="product-item__desc">
+              <h3 class="product-item__name">
                 White chair
-              </div>
-              <div class="products__price">
-                $29.00
-              </div>
+              </h3>
+              <span class="product-item__price">
+                <span>$</span>29.00
+              </span>
             </div>
-          </div>
+          </article>
 
-          <div class="products__item mix category-lighting" href="#">
-            <img class="products__img" src="images/week-products/8.png" alt="lighting">
-            <div class="products__desc">
-              <div class="products__name">
+          <article class="product-item mix category-decor" href="#">
+            <img class="product-item__img" src="images/week-products/8.png" alt="decor">
+            <ul class="product-item__links">
+              <a class="product-item__link product-item__link--search" href="#">
+                <span class="hidden">Go to selected products</span>
+              </a>
+              <button class="product-item__link product-item__link--cart" type="button">
+                <span class="hidden">Add to cart</span>
+              </button>
+              <button class="product-item__link product-item__link--heart" type="button">
+                <span class="hidden">Add to selected products</span>
+                </butto>
+            </ul>
+            <div class="product-item__desc">
+              <h3 class="product-item__name">
                 Retro table
-              </div>
-              <div class="products__price">
-                $29.00
-              </div>
+              </h3>
+              <span class="product-item__price">
+                <span>$</span>29.00
+              </span>
             </div>
-          </div>
+          </article>
 
         </div>
 
@@ -330,7 +412,7 @@
 
     <div class="video" style="background-image: url(images/video/video-bg.jpg);">
       <a data-fancybox class="video__link" href="https://www.youtube.com/watch?v=y_uk7Lloqrc&ab_channel=TechZone">
-        <img class="video__play" src="images/video/arrow.png" alt="video-play">
+        <span class="hidden">Whatch video</span>
       </a>
     </div>
 
@@ -348,35 +430,19 @@
           </a>
           <address class="footer__address">
             <a class="footer__address-item" href="#">
-              <div class="footer__address-title">
-                ADDRESS
-              </div>
-              <div class="footer__address-text">
-                : 4772 Wines Lane Houston, TX 77032
-              </div>
+              <span class="footer__address-title">Address</span>: 4772 Wines Lane Houston, TX 77032
             </a>
             <a class="footer__address-item" href="tel:+8323475843">
-              <div class="footer__address-title">
-                Telephone
-              </div>
-              <div class="footer__address-text">
-                : +832-347-5843
-              </div>
+              <span class="footer__address-title"> Telephone</span>: +832-347-5843
             </a>
             <a class="footer__address" href="mailto:contact@Glee.com">
-              <div class="footer__address-title">
-                Email
-              </div>
-              <div class="footer__address-text">
-                : contact@Glee.com
-              </div>
-
+              <span class="footer__address-title">Email</span>: contact@Glee.com
             </a>
           </address>
         </div>
 
         <div class="footer__item">
-          <div class="footer__title">Services</div>
+          <h3 class="footer__title">Services</h3>
           <ul class="footer__lists">
             <li class="footer__list">
               <a class="footer__link" href="#">About us</a>
@@ -397,7 +463,7 @@
         </div>
 
         <div class="footer__item">
-          <div class="footer__title">Account</div>
+          <h3 class="footer__title">Account</h3>
           <ul class="footer__lists">
             <li class="footer__list">
               <a class="footer__link" href="#">Your Account</a>
@@ -415,13 +481,15 @@
         </div>
 
         <div class="footer__item">
-          <div class="footer__title">newsletter</div>
+          <h3 class="footer__title">newsletter</h3>
           <div class="footer__subscribe">
             Subscribe by our newsletter and get
             update protidin.
           </div>
           <form class="email-form" action="#">
-            <label for="email"></label>
+            <label for="email">
+              <span class="hidden">Email address</span>
+            </label>
             <input class="input email-form__input" id="email" name="subscribe[email]" type="email"
               placeholder="Email address" required>
             <button class="btn-square email-form__btn" type="submit">Subscribe</button>
@@ -454,7 +522,7 @@
     </div>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script src="js/main.min.js"></script>
 </body>
 
