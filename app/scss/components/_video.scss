@@ -1,0 +1,43 @@
+.video {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    width: 100px;
+    height: 100px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+    transition: background-color 0.4s;
+    position: relative;
+    background-image: url(../images/video/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &:hover {
+      background-color: #4b7d98;
+
+      &:before {
+        visibility: hidden;
+      }
+    }
+
+    &::before {
+      @extend %pseudo;
+      border-radius: 50%;
+      background-color: rgb(163, 187, 200);
+      opacity: 0.4;
+      left: -15%;
+      top: -15%;
+      width: 127px;
+      height: 127px;
+      -webkit-animation: pulse 2s infinite;
+      animation: pulse 2s infinite;
+      animation-timing-function: ease-in-out;
+    }
+  }
+}

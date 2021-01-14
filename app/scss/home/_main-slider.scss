@@ -1,0 +1,115 @@
+.slider-main {
+  text-align: center;
+
+  &__wrapper {
+    padding: 0 15px;
+    background-color: #fcd7b6;
+  }
+
+  &__inner {
+    padding: 214px 0 84px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      background: -webkit-linear-gradient(left, transparent, white);
+      width: 634px;
+      height: 634px;
+      left: 83%;
+      transform: translateX(-50%);
+      top: 12%;
+    }
+
+    &:hover::before {
+      background: -webkit-linear-gradient(left, transparent, white, white);
+    }
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+    margin-bottom: 196px;
+  }
+
+  &__content {
+    max-width: 500px;
+    margin-right: 115px;
+    text-align: left;
+  }
+
+  &__title {
+    font-size: 72px;
+    line-height: 1.0;
+    color: $header;
+    @extend %Rubik-500;
+    margin-bottom: 28px;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 370px;
+    font-size: 18px;
+    margin: 26px 0 40px;
+    line-height: 1.6;
+  }
+
+  &__btn {
+    display: block;
+    position: relative;
+
+    &::after {
+      content: url(../images/slider/slider-btn-arrow.svg);
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 9%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__img {
+    margin: 55px auto 0;
+    z-index: 1;
+    object-fit: contain;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -72px;
+    right: 0;
+    left: 0;
+
+    li {
+      margin: 0 5px;
+
+      button {
+        @extend %Rubik-500;
+        font-size: 11px;
+        color: $header;
+        padding: 0;
+        background-color: #fde3cc;
+        width: 30px;
+        height: 30px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        outline: transparent;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #fff;
+        }
+      }
+
+      &.slick-active button {
+        background-color: #fff;
+      }
+    }
+  }
+}
