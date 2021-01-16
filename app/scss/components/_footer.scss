@@ -55,6 +55,10 @@
 
   .email-form {
 
+    &__label {
+      display: block;
+    }
+
     &__input {
       background-color: $bg;
       padding: 7px 15px;

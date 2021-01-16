@@ -13,5 +13,6 @@ $(function () {
     });
 
     var mixer = mixitup('.products__content');
+    var mixer2 = mixitup('.new-design__content');
  
 });
