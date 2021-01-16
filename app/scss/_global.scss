@@ -89,7 +89,7 @@ body {
 .menu-mix {
   display: flex;
   justify-content: center;
-  margin-bottom: 44px;
+  margin-bottom: 52px !important;
 
   &__item {
     &:not(:last-child) {
